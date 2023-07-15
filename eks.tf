@@ -33,7 +33,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_local_network" {
 }
 
 resource "aws_eks_cluster" "test" {
-  name     = "ops100"
+  name     = "test"
   role_arn = aws_iam_role.eks_cluster.arn
   version  = "1.27"
 
